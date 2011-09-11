@@ -1,20 +1,37 @@
-if [ ! -d ".repo" ]; then
-  echo "Missing .repo."
-  exit 1
-fi
-if [ "$1" == "" ]; then
-  echo "Need to specify target."
-  exit 2
-fi
-TARGET=$1
-mkdir $TARGET
-pushd $TARGET
-git init
-cd .git
-for i in branches config hooks info objects refs packed-refs ; do
+#!/usr/bin/
+
+if test "$1" = "init"; then
+  # Init for spaces
+  # Abort if .git is missing or .spaces exists
+  mkdir master # Use a tmp directory name, this will fail if mster exists
+  for i in `ls -A .`; do
+    if [ $i != "master" ]; then
+      mv $i master/$i;
+    fi;
+  done;
+  mkdir .spaces
+  cd master/.git
+  for i in branches config hooks info objects refs packed-refs ; do
+    mv $i ../../.spaces
+    ln -sf ../../.spaces/$i $i
+  done
+elif test "$1" = "new"; then
+  # Create a new space
+  # Check for space
+  SPACE=$2
+  # Abort is name not included.
+  # Create Space
+  mkdir $SPACE
+  cd $SPACE
+  git init
+  cd .git
+  for i in branches config hooks info objects refs packed-refs ; do
     rm -rf $i
     ln -sf ../../.repo/$i $i
-done
-cd ..
-git reset --hard
-echo New workspace create at $(pwd)
+  done
+  cd ..
+  git reset --hard
+else
+  # Print usage (Use man?)
+  echo "usage"
+fi
