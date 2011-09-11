@@ -1,0 +1,20 @@
+if [ ! -d ".repo" ]; then
+  echo "Missing .repo."
+  exit 1
+fi
+if [ "$1" == "" ]; then
+  echo "Need to specify target."
+  exit 2
+fi
+TARGET=$1
+mkdir $TARGET
+pushd $TARGET
+git init
+cd .git
+for i in branches config hooks info objects refs packed-refs ; do
+    rm -rf $i
+    ln -sf ../../.repo/$i $i
+done
+cd ..
+git reset --hard
+echo New workspace create at $(pwd)
