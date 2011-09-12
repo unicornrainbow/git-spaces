@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
 if test "$1" = "init"; then
-  # Init for spaces
-  # Abort if .git is missing or .spaces exists
+  test -d .spaces && echo "Spaces already intialized" && exit 1
+  test ! -d .git && echo "fatal: Not the root of a git repository" && exit 1
   mkdir master # Use a tmp directory name, this will fail if mster exists
   for i in `ls -A .`; do
     if [ $i != "master" ]; then
@@ -20,8 +20,8 @@ elif test "$1" = "create"; then
   # Create a new space
   # Check for space
   SPACE=$2
-  # Abort is name not included.
-  # Create Space
+  test ! -d .spaces && echo "fatal: Must be in the root with spaces initalized" && exit 1
+  test -d $SPACE && echo "Space $SPACE already exists" && exit 1
   mkdir $SPACE
   cd $SPACE
   git init
