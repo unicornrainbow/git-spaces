@@ -1,6 +1,6 @@
 # Git Spaces
 
-Multi branch checkout for git.
+Multiple workspaces for git
 
 ## Installation
 
