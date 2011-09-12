@@ -21,3 +21,7 @@ The init command will move everything to a master subdirectory. Master will serv
 Upon creation, new spaces will automatically be intialized to the master branch. Once created, enter the directory and checkout the desirde branch.
 
 When you are done with a space, you can remove it by exiting the space directory and removeing it with `rm -rf`. Note that this will permanently remove the space, so be sure to commit any work you plan on keeping before doings so.
+
+## Acknowledgement
+
+Acknowledgement must be given to the wonderful [git-extras](https://github.com/visionmedia/git-extras) project from which I took much inspiration and code.
