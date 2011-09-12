@@ -1,4 +1,4 @@
-#!/usr/bin/
+#!/usr/bin/env sh
 
 if test "$1" = "init"; then
   # Init for spaces
@@ -11,8 +11,9 @@ if test "$1" = "init"; then
   done;
   mkdir .spaces
   cd master/.git
-  for i in branches config hooks info objects refs packed-refs ; do
-    mv $i ../../.spaces
+  # Move everthing except
+  for i in `ls -A | grep -v 'HEAD\|COMMIT_EDITMSG\|logs\|index'`; do
+    mv $i ../../.spaces/$i
     ln -sf ../../.spaces/$i $i
   done
 elif test "$1" = "new"; then
@@ -27,7 +28,7 @@ elif test "$1" = "new"; then
   cd .git
   for i in branches config hooks info objects refs packed-refs ; do
     rm -rf $i
-    ln -sf ../../.repo/$i $i
+    ln -sf ../../.spaces/$i $i
   done
   cd ..
   git reset --hard
