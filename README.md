@@ -16,7 +16,7 @@ Clone / Tarball:
 
 ## Note
 
-The init command will move everything to a `master` subdirectory which may serve as your new main working directory should you choose.
+The `init` command will move everything intto the `master` subdirectory which may serve as your new main working directory should you choose.
 
 Upon creation, new spaces will automatically be initialized to the master branch. Once created, enter the directory and checkout the desirde branch.
 
