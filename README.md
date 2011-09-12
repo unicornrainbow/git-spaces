@@ -24,4 +24,10 @@ When you are done with a space, you can remove it by exiting the space directory
 
 ## Acknowledgement
 
-Acknowledgement must be given to the wonderful [git-extras](https://github.com/visionmedia/git-extras) project from which I took much inspiration and code.
+Acknowledgement must be given to the wonderful [git-extras][1] project from which I took much inspiration and code.
+
+Additionally, Credit for base implementation and idea goes to [Dmitry Fink][2] and his post [Multiple working folders with single GIT repository][3]
+
+  [1]: https://github.com/visionmedia/git-extras
+  [2]: http://twitter.com/finik
+  [3]: http://finik.net/2010/10/24/multiple-working-folders-with-single-git-repository/
