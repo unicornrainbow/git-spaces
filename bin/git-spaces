@@ -16,7 +16,7 @@ if test "$1" = "init"; then
     mv $i ../../.spaces/$i
     ln -sf ../../.spaces/$i $i
   done
-elif test "$1" = "new"; then
+elif test "$1" = "create"; then
   # Create a new space
   # Check for space
   SPACE=$2
@@ -33,6 +33,5 @@ elif test "$1" = "new"; then
   cd ..
   git reset --hard
 else
-  # Print usage (Use man?)
-  echo "usage"
+  man git-spaces
 fi
