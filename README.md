@@ -11,7 +11,7 @@ Setup git spaces with a git repo for the first time.
 Which will:
 
                     project/                   project/
-    turn this ➔       .git/     into this ➔      .spaces/
+    turn this  ->    .git/     into this  ->     .spaces/
                       *                          master/
                                                    .git/
                                                    *
