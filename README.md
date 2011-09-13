@@ -28,7 +28,7 @@ To create a new space, simply enter the **project directory** (formally your git
     master
     $ git spaces create my_space
     Initialized empty Git repository in /Users/blake/Projects/spaces_example/my_space/.git/
-HEAD is now at c3b8baa Initial commit
+    HEAD is now at c3b8baa Initial commit
     $ ls
     master my_space
 
