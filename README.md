@@ -32,7 +32,7 @@ HEAD is now at c3b8baa Initial commit
     $ ls
     master my_space
 
-When you're finish with a space, commit any remaining changes and remove the **workspace** (workspace refers the actual git workspaces, which now show up as subdirectories independent of the project directory). You can do this using `rm -rf`. Your changes will remain intact and avaible in all other spaces you've created or will create.
+When you're finish with a space, commit any remaining changes and remove the **workspace** (workspace refers the actual git workspaces, which now show up as subdirectories independent of the project directory). You can do this using `rm -rf` (Note: always be careful when using rm -rf). Your changes will remain intact and avaible in all other spaces you've created or will create.
 
 ## Installation
 
