@@ -1,6 +1,6 @@
 # Git Spaces
 
-Git spaces gives you as many workspaces as you want on a single Git repository. This can help when you need to work with multi branches, on and off, and concurrently throughout the day. Naturally, it sucks to have to be so all over the place juggling branches, but sometimes there's no way around it. When your time is divided, git spaces can help to focus on a single task at a time.
+Git spaces gives you as many workspaces as you want on a single Git repository. This can help when you need to work with multi branches on and off and concurrently throughout the day. Naturally, it sucks to have to be so all over the place juggling branches, but sometimes there's no way around it. When your time is divided, git spaces can help to focus on a single task at a time.
 
 Git spaces creates workspaces as subdirectories of the project directory. The subdirectories, or **spaces** can easily be navigated as you would a typical directory structure.
 
@@ -24,7 +24,7 @@ Into this...
         .git/
         *
 
-The splate represents everything under project, and the example shows it will be moved into the master/ space along with the .git/ folder.
+The splat represents everything under project, and the example shows it will be moved into the master/ space along with the .git/ folder.
 
 A new folder, .spaces/, has been created. The .spaces/ directory contains the repo. The .git/ folder, now in master, is configured and linked to the .spaces/ directory. This allows you to commiting on a single repo while keeping track of the branch, local index and working tree for each space individually.
 
