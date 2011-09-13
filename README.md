@@ -22,7 +22,7 @@ You'll notice a new folder .spaces/ has been created. This contains the main rep
 
 You can still stash, and switch branches like you could before, but now you can have any number of workspaces for scratch work, running multiple versions, reference or whatever.
 
-To create a new space, simply enter the **project directory** (Formally your git working directory) and run the `git spaces create  <name>` command.
+To create a new space, simply enter the **project directory** (formally your git working directory) and run the `git spaces create  <name>` command.
 
     $ ls
     master
