@@ -50,14 +50,8 @@ You can uninstall at anytime, if need be, with `make uninstall`.
 
 ## Usage
 
-    $ git spaces init
+    $ git spaces init           # Intiailize a git repository for spaces. Moves everything 
+                                  you're currently working on into master/
 
-    $ git spaces create some-feature
+    $ git spaces create <name>  # Creates a new workspace AKA. "space"
 
-## Note
-
-The `init` command will move everything intto the `master` subdirectory which may serve as your new main working directory should you choose.
-
-Upon creation, new spaces will automatically be initialized to the master branch. Once created, enter the directory and checkout the desirde branch.
-
-When you are done with a space, you can remove it by exiting the space directory and removeing it with `rm -rf`. Note that this will permanently remove the space, so be sure to commit any work you plan on keeping before doings so.
