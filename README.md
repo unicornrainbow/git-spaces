@@ -26,9 +26,9 @@ Into this...
 
 The splate represents everything under project, and the example shows it will be moved into the master/ space along with the .git/ folder.
 
-A new folder, .spaces/, has been created. The .spaces/ directory contains the repo. The .git/ folder, now in master, is configured and linked to the .spaces/ directory. This allows you to continue updating branches, make commits and push and pull source for the entire repo, while keeping track of the branch, local index and working tree for each space individually.
+A new folder, .spaces/, has been created. The .spaces/ directory contains the repo. The .git/ folder, now in master, is configured and linked to the .spaces/ directory. This allows you to commiting on a single repo while keeping track of the branch, local index and working tree for each space individually.
 
-You can still stash, and switch branches like before, but now you can have any number of workspaces, and you can stash an pop on any of them, for scratch work, running multiple versions, reference or whatever.
+You can still stash, and switch branches like before, but now you can have any number of workspaces and you can stash or switch branches on any of them.
 
 ### Creating a space
 
@@ -71,5 +71,5 @@ You can uninstall with `make uninstall`.
 
 ## Reporting Issues
 
-If you find somthing wrong please open up an issue on [git issues](https://github.com/blakefrost/git-spaces/issues).
+If you find somthing wrong please open up an issue on [GitHub Issues](https://github.com/blakefrost/git-spaces/issues).
 
