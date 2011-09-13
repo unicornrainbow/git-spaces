@@ -11,7 +11,7 @@ To setup git repository for the first time...
 Which will turn this
 
     project/                  project/
-      .git/   ➔ into this ➔    .spaces/
+      .git/   ➔ into this ➔   .spaces/
       *                           master/
                                    .git/
                                    *
