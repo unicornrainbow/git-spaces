@@ -1,6 +1,6 @@
 # Git Spaces
 
-Git spaces gives you as many workspaces as you want for working with a single Git repository. This can help when you need to work with multi branches on and off concurrently throughout the day. Naturally, it kinda sucks to have to be so all over the place and juggling branches, but sometimes there's really no way around it. That's why I made git spaces, that's why I made git spaces. To be able to focus on a single task at hand while being pulled in mutiple directions.
+Git spaces gives you as many workspaces as you want on a single Git repository. This can help when you need to work with multi branches, on and off, concurrently throughout the day. Naturally, it kinda sucks to have to be so all over the place, and juggling branches, but sometimes there's really no way around it. That's why I made git spaces. To be able to focus on a single task at hand while being pulled in mutiple directions.
 
 Git spaces allows you to easily set up a git workspace to contain a series of linked wrokspaces within the directories below.
 
