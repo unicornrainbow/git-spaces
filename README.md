@@ -42,9 +42,9 @@ Download the latest tarball from the link at the top right of the git hub page o
 
     $ git clone git@github.com:blakefrost/git-spaces.git
 
-Finally, run make install from within the directory
+Finally, run `make install` from within the directory
 
-     $ make
+     $ make install
 
 You can uninstall at anytime, if need be, with `make uninstall`.
 
