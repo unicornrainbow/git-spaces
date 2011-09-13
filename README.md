@@ -50,7 +50,7 @@ You can uninstall at anytime, if need be, with `make uninstall`.
 
 ## Usage
 
-    $ git spaces init           # Intiailize a git repository for spaces. Moves everything 
+    $ git spaces init           # Intiailize a git repository for spaces. This oves everything 
                                   you're currently working on into master/
 
     $ git spaces create <name>  # Creates a new workspace AKA. "space"
