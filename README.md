@@ -16,13 +16,13 @@ Which will turn this
                                    .git/
                                    *
 
-The splate indicates that everything under project will be saftly moved into 'master' space along with the .git/ folder.
+The splate indicates that everything under project will be saftly moved into master/ space along with the .git/ folder.
 
-You'll notice a new folder `.spaces` has been created. This contains the main repo. The .git folder is specially linked to the .spaces directory to allow the space to update branches, make commits and push and pull source for the entire repo, while it also maintains it's own state for controlling which branch it's on, which files are on disk, and in which state.
+You'll notice a new folder .spaces/ has been created. This contains the main repo. The .git/ folder is specially linked to the .spaces/ directory to allow the space to update branches, make commits and push and pull source for the entire repo, while it also maintains it's own state for controlling which branch it's on, which files it has checked out and so on.
 
-You can still stash, and switch branches like you could before, but now you can have any number of workspaces for scratch work, running different versions at the same, reference or whatever.
+You can still stash, and switch branches like you could before, but now you can have any number of workspaces for scratch work, running multiple versions, reference or whatever.
 
-To create a new space, simply enter the 'project directory' (Formally your git working directory) and run the `spaces create` command.
+To create a new space, simply enter the **project directory** (Formally your git working directory) and run the `git spaces create  <name>` command.
 
     $ ls
     master
@@ -32,7 +32,7 @@ HEAD is now at c3b8baa Initial commit
     $ ls
     master my_space
 
-When you're finish with a space, commit your changes and remove the 'workspace' (This is the actual git workspace, now a sub directory of the project workspace.) with `rm -rf`. This will remove the working directory and linked repo of the space, but leave the root .space directory intact with all your changes.
+When you're finish with a space, commit any remaining changes and remove the **workspace** (**workspace** refers the actual git workspaces, which now show up as subdirectories independent of the project directory). You can do this using `rm -rf`. Your changes will remain intact and avaible in all other spaces you've created or will create.
 
 ## Installation
 
