@@ -36,9 +36,17 @@ When you're finish with a space, commit your changes and remove the 'workspace' 
 
 ## Installation
 
-Clone / Tarball:
+### Clone / Tarball:
 
-     $ make install
+Download the latest tarball from the link at the top right of the git hub page or clone the repo.
+
+    $ git clone git@github.com:blakefrost/git-spaces.git
+
+Finally, run make install from within the directory
+
+     $ make
+
+You can uninstall at anytime, if need be, with `make uninstall`.
 
 ## Usage
 
