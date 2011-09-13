@@ -10,11 +10,11 @@ Setup git spaces with a git repo for the first time.
 
 Which will:
 
-                project/                  project/
-   turn this ➔    .git/   ➔ into this ➔    .spaces/
-                   *                         master/
-                                               .git/
-                                               *
+                 project/                  project/
+    turn this ➔    .git/   ➔ into this ➔    .spaces/
+                    *                         master/
+                                                .git/
+                                                *
 
 The splate indicates that everything under project will be saftly moved into master/ space along with the .git/ folder.
 
