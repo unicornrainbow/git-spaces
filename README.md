@@ -55,3 +55,7 @@ You can uninstall at anytime, if need be, with `make uninstall`.
 
     $ git spaces create <name>  # Creates a new workspace AKA. "space"
 
+## Reporting Issuess
+
+If you find something wrong, please open up an issue on [git issues](https://github.com/blakefrost/git-spaces/issues).
+
