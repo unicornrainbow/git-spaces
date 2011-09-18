@@ -12,7 +12,7 @@ if test "$1" = "init"; then
   mkdir .spaces
   cd master/.git
   # Move everthing except
-  for i in `ls -A | grep -v 'HEAD\|COMMIT_EDITMSG\|logs\|index'`; do
+  for i in `ls -A | grep -v 'HEAD\|COMMIT_EDITMSG\|index'`; do
     mv $i ../../.spaces/$i
     ln -sf ../../.spaces/$i $i
   done
@@ -26,7 +26,7 @@ elif test "$1" = "create"; then
   cd $SPACE
   git init
   cd .git
-  for i in branches config hooks info objects refs packed-refs ; do
+  for i in branches config hooks info logs objects refs packed-refs ; do
     rm -rf $i
     ln -sf ../../.spaces/$i $i
   done
