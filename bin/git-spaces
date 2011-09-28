@@ -24,6 +24,9 @@ elif test "$1" = "create"; then
   test -d $SPACE && echo "Space $SPACE already exists" && exit 1
   mkdir $SPACE
   cd $SPACE
+  # Bring over common dot files from master folder if they exist
+  test ../master/.gitignore && cp ../master/.gitignore .
+  test ../master/.rvmrc && cp ../master/.rvmrc .  
   git init
   cd .git
   for i in branches config hooks info logs objects refs packed-refs ; do
