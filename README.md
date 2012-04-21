@@ -1,3 +1,13 @@
+**Important**: I no longer maintain this project. I use to use this to
+manage a multitasking, interruptable workflow. I now do the same soley
+with branches, stashes and some [git
+aliases](https://github.com/blakefrost/dots/blob/master/gitconfig).  I
+recommend other try to do the same. I also recommend, as a programmer,
+avoiding multitasking and interruptions, but sometimes that's what the
+job calls for.
+
+***
+
 # Git Spaces (Not Maintained)
 
 Git spaces gives you as many workspaces as you want on a single Git repository. This can help when you need to work with multi branches on and off and concurrently throughout the day. Naturally, it sucks to have to be so all over the place juggling branches, but sometimes there's no way around it. When your time is divided, git spaces can help to focus on a single task at a time.
