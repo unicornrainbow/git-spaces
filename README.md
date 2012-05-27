@@ -2,7 +2,7 @@
 manage a multitasking, interruptable workflow. I now do the same soley
 with branches, stashes and some [git
 aliases](https://github.com/blakefrost/dots/blob/master/gitconfig).  I
-recommend other try to do the same. I also recommend, as a programmer,
+recommend others try to do the same. I also recommend, as a programmer,
 avoiding multitasking and interruptions, but sometimes that's what the
 job calls for.
 
